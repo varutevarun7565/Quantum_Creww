@@ -141,6 +141,10 @@ fun JeevanApp(viewModel: JeevanViewModel) {
             )
         }
 
+        composable(Screen.Chatbot.route) {
+            ChatbotScreen(onBack = { navController.popBackStack() })
+        }
+
         // ════════════════════════════════════════
         // PROFILE (shared by all roles)
         // ════════════════════════════════════════

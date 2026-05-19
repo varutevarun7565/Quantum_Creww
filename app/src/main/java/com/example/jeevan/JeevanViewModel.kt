@@ -27,6 +27,7 @@ sealed class Screen(val route: String) {
     object ProfileEdit      : Screen("profile_edit")
     object Login            : Screen("login")
     object Signup           : Screen("signup")
+    object Chatbot          : Screen("chatbot")
     // Role-specific dashboards (no SOS button)
     object DriverDashboard  : Screen("driver_dashboard")
     object DriverTracking   : Screen("driver_tracking")

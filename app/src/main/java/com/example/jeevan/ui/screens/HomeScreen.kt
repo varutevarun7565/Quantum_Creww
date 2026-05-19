@@ -98,7 +98,12 @@ fun HomeScreen(
                         // ── Location Pill ──
                         LocationPill(address = uiState.locationAddress, status = uiState.locStatus)
 
-                        Spacer(Modifier.height(24.dp))
+                        Spacer(Modifier.height(16.dp))
+
+                        // ── Chat with AI Button ──
+                        ChatWithAIPill(onClick = { onNavigate(Screen.Chatbot.route) })
+
+                        Spacer(Modifier.height(16.dp))
 
                         // ── Call Ambulance Button (dials 108) ──
                         CallAmbulanceButton()
@@ -303,6 +308,43 @@ fun LocationPill(address: String, status: String) {
                 style = MaterialTheme.typography.titleMedium,
                 color = JeevanOnBackground,
                 maxLines = 1,
+            )
+        }
+    }
+}
+
+// ─────────────────────────────────────────────────
+// Chat with AI Pill
+// ─────────────────────────────────────────────────
+@Composable
+fun ChatWithAIPill(onClick: () -> Unit) {
+    Surface(
+        onClick = onClick,
+        shape = RoundedCornerShape(50),
+        color = Color(0xFFFFF9E6), // Light yellow tint matching the screenshot
+        tonalElevation = 2.dp,
+        shadowElevation = 3.dp,
+        modifier = Modifier
+            .fillMaxWidth()
+            .height(58.dp)
+            .border(
+                width = 1.dp,
+                color = Color(0xFFFBE5B4),
+                shape = RoundedCornerShape(50)
+            )
+    ) {
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.Center,
+            modifier = Modifier.padding(horizontal = 18.dp, vertical = 10.dp)
+        ) {
+            Text(text = "🤖", fontSize = 22.sp)
+            Spacer(Modifier.width(12.dp))
+            Text(
+                text = "Chat with JEEVAN AI",
+                style = MaterialTheme.typography.titleMedium,
+                fontWeight = FontWeight.Bold,
+                color = Color(0xFF4A4A4A) // Dark text for contrast
             )
         }
     }
