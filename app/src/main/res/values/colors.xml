@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- ── Standard colors (required by default Android project templates) ── -->
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
@@ -7,4 +8,26 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- ── JEEVAN Emergency Design Palette ── -->
+    <color name="jeevan_red">#FFB91C1C</color>
+    <color name="jeevan_red_dark">#FF991B1B</color>
+    <color name="jeevan_red_light">#FFDC2626</color>
+    <color name="jeevan_red_soft">#FFFEF2F2</color>
+    <color name="jeevan_background">#FFEBEBF2</color>
+    <color name="jeevan_surface">#FFFFFFFF</color>
+    <color name="jeevan_surface2">#FFF4F4F8</color>
+    <color name="jeevan_navy">#FF1E3A5F</color>
+    <color name="jeevan_navy_light">#FF2D4E7A</color>
+    <color name="jeevan_green">#FF16A34A</color>
+    <color name="jeevan_green_soft">#FFDCFCE7</color>
+    <color name="jeevan_on_bg">#FF111827</color>
+    <color name="jeevan_subtext">#FF6B7280</color>
+    <color name="jeevan_border">#FFE5E7EB</color>
+    <color name="jeevan_avatar_bg">#FF1F2937</color>
+
+    <!-- Sonar rings -->
+    <color name="sonar_ring_1">#FFE8D5D5</color>
+    <color name="sonar_ring_2">#FFDFBFBF</color>
+    <color name="sonar_ring_3">#FFD4A8A8</color>
 </resources>
