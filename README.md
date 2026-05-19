@@ -1,6 +1,6 @@
-# Quantum_Creww (Android Application)
+# Jeevan (Android Application)
 
-Quantum_Creww is an Android-based emergency response application designed to instantly send SOS alerts to pre-registered emergency contacts through a fast, secure, and automated system.
+Jeevan is an Android-based emergency response application designed to instantly send SOS alerts to pre-registered emergency contacts through a fast, secure, and automated system.
 
 The application focuses on providing quick assistance during accidents or emergency situations by combining OTP-based authentication, contact management, and real-time alert delivery.
 
