@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">JEEVAN</string>
+    <string name="sos">SOS</string>
+    <string name="emergency_message">In case of emergency, press SOS</string>
+    <string name="call_ambulance">Call Ambulance</string>
+    <string name="detecting_location">Detecting location…</string>
 </resources>

@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: jeevan-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: MONGO_URI
+        value: mongodb+srv://kamateadarsh17_db_user:Adarsh2005@cluster0.oylj9fp.mongodb.net/jeevan?retryWrites=true&w=majority&appName=Cluster0
+      - key: DB_NAME
+        value: jeevan
